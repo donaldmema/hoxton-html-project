@@ -94,6 +94,12 @@
   padding-top: 50px;
 }
 
+.main h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 30px;
+}
+
 /* This is the Download from Play/App Store section */
 
 .download-app {
@@ -141,5 +147,40 @@
   width: 0;
   height: 0;
   border-bottom: 80px solid var(--primary-color);
-  border-right: 100vw solid transparent;
+  border-right: 99vw solid transparent;
+}
+
+/* This is the App Summary section */
+
+.app-summary {
+  display: grid;
+  height: calc(100vh - 80px);
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  padding: 10px 150px;
+}
+
+.app-summary__image {
+  width: 800px;
+}
+
+.summary-container {
+  display: grid;
+  gap: 30px;
+  justify-items: center;
+}
+
+.app-summary__item {
+  width: 570px;
+  display: grid;
+  padding: 40px 20px;
+  gap: 20px;
+  border-radius: 20px;
+  transition: 300ms;
+}
+
+.app-summary__item:hover {
+  cursor: pointer;
+  background-color: var(--hovered-color);
+  color: var(--hovered-text-color);
 }
