@@ -8,6 +8,11 @@
   scroll-behavior: smooth;
 }
 
+html {
+  --top-spacing: 50px;
+  scroll-padding-top: var(--top-spacing);
+}
+
 :root {
   --body-background-color: #f2e2ba;
   --primary-color: #54a06c;
@@ -307,4 +312,72 @@ a.scroll-down-anchor {
 .instructions__buttons button:active {
   background-color: #8c5bde;
   filter: brightness(1.2);
+}
+
+/* This is the Features Section */
+
+.features {
+  display: grid;
+  gap: 5rem;
+  padding: 10rem 2rem 14rem 2rem;
+}
+
+.features h2 {
+  font-size: 50px;
+}
+
+.features__container {
+  display: grid;
+  grid-auto-flow: column;
+  place-content: center;
+  gap: 10rem;
+  padding: 2rem;
+}
+
+.features__item {
+  display: grid;
+  place-items: center;
+  gap: 20px;
+}
+
+.features__item h3 {
+  font-size: 25px;
+  color: var(--primary-text-color);
+}
+
+.features__item ul {
+  list-style: none;
+}
+
+.features__item li {
+  color: var(--secondary-color);
+}
+
+.features__item img {
+  width: 60px;
+}
+
+/* This is the motto family banner section */
+
+.motto-banner {
+  padding: 10rem 0;
+  background-image: url(./assets/images/image-family.jpg);
+  background-size: cover; /* change this to contain if you uncomment the height */
+  background-position: top;
+  background-repeat: no-repeat;
+  /* height: 900px; */
+}
+
+/* .motto-banner img {
+  object-fit: cover;
+  width: calc(100vw - 7px);
+} */
+
+.motto-familynk {
+  color: var(--secondary-text-color);
+  font-weight: 200;
+}
+
+#familynk-span {
+  color: var(--primary-color);
 }
