@@ -82,6 +82,7 @@
   display: grid;
   align-items: center;
   padding: 5px 10px;
+  transition: 300ms;
 }
 
 .header__navbar li:hover {
@@ -97,6 +98,7 @@
   width: 60px;
   height: 30px;
   cursor: pointer;
+  transition: 300ms;
 }
 
 .log-in:hover {
@@ -222,8 +224,87 @@ a.scroll-down-anchor {
 /* This is the instructions section */
 
 .instructions {
-  height: 97vh;
+  height: 95vh;
   background-color: var(--hovered-color);
 
   display: grid;
+  grid-template-rows: auto 1fr auto;
+  place-items: center;
+}
+
+.instructions-top-strip-white {
+  width: 54px;
+  height: 4px;
+  margin: 80px auto 0px auto;
+  background-color: var(--primary-text-color);
+  display: block;
+}
+
+.instructions-card-section {
+  display: grid;
+  grid-auto-flow: column;
+  place-content: center;
+  align-content: center;
+  width: 80vw;
+}
+
+.instructions__card {
+  background-color: #dfd6c0;
+  display: grid;
+  justify-items: center;
+  margin: 40px 0px;
+  padding: 20px;
+  max-width: 400px;
+  gap: 20px;
+}
+
+.instructions__card.middle {
+  background-color: var(--body-background-color);
+  margin: 0px;
+  padding: 60px 50px;
+}
+
+.instructions__card h3 {
+  font-size: 30px;
+}
+
+.instructions__card p {
+  font-size: 18px;
+  overflow-wrap: normal;
+}
+
+.instructions__card img {
+  width: 150px;
+  object-fit: scale-down;
+}
+
+.instructions__buttons a {
+  text-decoration: none;
+}
+
+.instructions__buttons {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2rem;
+  margin-bottom: 70px;
+}
+
+.instructions__buttons button {
+  background-color: #d1b5ff;
+  font-size: 16px;
+  border: none;
+  border-radius: 40px;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.instructions__buttons button:hover {
+  background-color: #8c5bde;
+}
+
+.instructions__buttons button:active {
+  background-color: #8c5bde;
+  filter: brightness(1.2);
 }
