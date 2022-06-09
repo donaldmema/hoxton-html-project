@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="log-in.css" />
+  </head>
+  <body>
+    <div class="background-wrapper">
+      <video
+        id="background-video"
+        src="./assets/videos/background-loop.mp4"
+        muted
+        autoplay
+        loop
+      ></video>
+      <div class="container">
+        <h1>FamiLynk</h1>
+        <form class="user-form" action="">
+          <button>
+            <img src="./assets/images/google-icon.webp" alt="" width="25px" />
+            <span>Sign in with Google</span>
+          </button>
+          <button class="apple">
+            <img
+              class="apple-logo"
+              src="./assets/images/apple.png"
+              alt=""
+              width="20px"
+            />
+            <span>Sign in with Apple</span>
+          </button>
+
+          <center>
+            <label>
+              <br />
+              Or
+            </label>
+          </center>
+          <input
+            id="email"
+            type="email"
+            placeholder="Enter your email address"
+            required
+          />
+
+          <input
+            id="password"
+            type="password"
+            placeholder="Enter your password"
+            required
+          />
+          <button class="submit-button">Log In →</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
