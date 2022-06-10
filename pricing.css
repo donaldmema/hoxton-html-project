@@ -112,6 +112,75 @@ html {
 
 /* This is the main section */
 
+.main {
+  padding-top: 50px;
+  height: 100vh;
+  width: calc(100vw - 7px);
+  display: grid;
+  gap: 2rem;
+  place-content: start;
+  place-items: center;
+  justify-content: center;
+}
+
+.main h2 {
+  font-size: 70px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.main h3 {
+  font-size: 16px;
+  text-align: center;
+}
+
+.plans__container {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 3rem;
+  margin-top: 80px;
+}
+
+.plans__item {
+  background-color: white;
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.plans__item-pricing {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.membership-image img {
+  width: 75px;
+}
+
+.plans__item-features {
+  padding-top: 1rem;
+  padding-right: 10rem; /* Change this if you want to make the font size bigger */
+  display: grid;
+  gap: 1rem;
+}
+
+.membership-features {
+  display: grid;
+  gap: 1rem;
+}
+
+.main ul {
+  list-style: none;
+}
+
+/* .main ul {
+  list-style-type: "\2713";
+} */
+
 /* This is the footer section */
 
 .footer {
