@@ -138,13 +138,19 @@ html {
   display: grid;
   grid-auto-flow: column;
   gap: 3rem;
-  margin-top: 80px;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .plans__item {
-  background-color: white;
+  background-color: var(--header-background-color);
   border-radius: 20px;
   padding: 2rem;
+}
+
+.plans__item:hover {
+  transform: scale(1.01);
+  box-shadow: 1px 1px 5px 0px var(--secondary-color);
 }
 
 .plans__item-pricing {
@@ -153,8 +159,18 @@ html {
   justify-content: space-between;
   align-items: center;
 
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   border-bottom: 1px solid var(--secondary-color);
+}
+
+.pricing-text h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #8652ff;
+}
+
+.pricing-text h5 {
+  font-size: 35px;
 }
 
 .membership-image img {
@@ -171,10 +187,27 @@ html {
 .membership-features {
   display: grid;
   gap: 1rem;
+  font-weight: 500;
 }
 
 .main ul {
   list-style: none;
+}
+
+.download-btn {
+  border: none;
+  background-color: #8652ff;
+  color: var(--secondary-text-color);
+  border-radius: 2.5rem;
+  width: 250px;
+  height: 55px;
+  cursor: pointer;
+  transition: 300ms;
+  font-size: 18px;
+}
+
+.download-btn:hover {
+  opacity: 0.8;
 }
 
 /* .main ul {
